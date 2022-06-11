@@ -1,0 +1,51 @@
+how are we telling the character where to move?
+- get characters pixels, shift these, get 3D vector of this location?
+    - camera raycast this vector, set character to Y of the block
+    - now the X/Z are thrown off:
+        - check character pixel difference, move character until 0
+
+- line 533 pan():
+	- we are applying x+y 2D to the charPos then shifting back to 3D
+	- let's try applying x+y 
+
+- line 550 pan():
+	- ensure character is on the block ---- this is broken when y of block changes
+	- before setting cha.position to floorBlock, raycast to character, get the block here, set char y to this --- this breaks char x/z --- 
+	- 
+
+- clone of cha position
+- raycast to cha position, get block here
+- set cha position to y of block
+- raycast to clone of cha position
+	- get intersect point of floorBlock?
+
+
+- until distance between cha position and clone = 0:
+	- adjust x and z, y must remain the same
+
+- in colorCheck() line 465:
+	- intersect object position y is relative to screen, not the world
+
+- floorblockpos is coming through 
+
+
+
+- if box is closer to the camera than the char
+- do the for loop
+	- until intersect[k] == character
+		- ignore
+	- 
+
+if y of floorBlock is different than cha.y (more than .75?) {
+	
+}
+
+need to be able to shift the y of the character without changing the 2D screen position
+in pan() we applyQuaternion(quat) to unrotate, apply changes, then applyQuaternion(quat.inverse())
+
+
+DEBUGGER
+- on mouse event
+	- raycast mouse location
+	- highlight intersected blocks (like builder)
+	- show info for intersected blocks & char

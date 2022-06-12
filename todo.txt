@@ -1,10 +1,18 @@
+# New TODO
+- Add door
+- Make door goal
+- Reaching goal ends level and loads next level (level`x` where x++)
+- Add "testing" to builder (add character and allow playing of level)
+    - when level ends in editor, end "test" and resume editing
+- Add reset button to builder (deletes everything and resets to center block)
+
 # Character
 + Move in 2D plane
 + Move by color
 - Smooth movement
 
 # World builder
-- Add/remove blocks
++ Add/remove blocks
 - Stairs
 - Load level into editor
 
@@ -13,10 +21,9 @@
 - UI
 
 # Save/load levels
-- Load
++ Load
 - Save
 - Level menu
-- Browser
 
 # Gameplay
 

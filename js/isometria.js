@@ -2,7 +2,7 @@
  *******************************
  ***      isometria.js       ***
  ***                         ***
- ***  Author: Jordan Wells   ***
+ ***  Author: Madison Wells   ***
  ***                         ***
  ***  Date:    2019          ***
  ***                         ***
@@ -371,13 +371,16 @@ function switchLevel(level) {
 //TODO
 //saves level
 function saveLevel() {
-    // if (currentScene == "sceneBuilder") {
-    //     //children[1] is always the red hover box
-    //     for (var i = 0; i < sceneBuilder.children.length; i++) {
-    //         console.log("{" + sceneBuilder.children[i].position.x + ", " + sceneBuilder.children[i].position.y + ", " + sceneBuilder.children[i].position.z + "}");
-    //     }
-    //     var level = $('input[name="currentLevel"]').val();
-    // }
+    if (currentScene == "sceneBuilder") {
+        //children[1] is always the red hover box
+        var level = $('input[name="currentLevel"]').val();
+        console.log("var " + level + " = [");
+        for (var i = 0; i < sceneBuilder.children.length; i++) {
+            console.log("{" + sceneBuilder.children[i].position.x + ", " + sceneBuilder.children[i].position.y + ", " + sceneBuilder.children[i].position.z + "}");
+        }
+        console.log("];");
+        console.log("levels.push(" + level + ");");
+    }
     // writeStuff();
 }
 

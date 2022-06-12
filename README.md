@@ -1,6 +1,4 @@
 # Isometria
-Isometria is a 3D perspective-based puzzle game featuring isometric graphics. 
+Isometria is an isometric puzzle-platformer that uses the camera’s perspective to perform mind-bending MC Escher-style 3D movement.
 
-It is written in javascript using the `three.js` library and jQuery.
-
-Copyright Jordan Wells & Tom Nguyen 2019.
+It is written in JavaScript using the `three.js` library and jQuery.

@@ -43,12 +43,12 @@ var characterColor = "#F29E38";
 // var cubeColor4 = "#674bee"; //bottom
 // var cubeColor5 = "#f7cc63"; //front
 // var cubeColor6 = "#CBDEDC"; //back
-var cubeColor1 = "#00b5ac"; //right
-var cubeColor2 = "#00b5ac"; //left
-var cubeColor3 = "#29cc7a"; //top
-var cubeColor4 = "#ffffff"; //bottom
-var cubeColor5 = "#d9fac3"; //front
-var cubeColor6 = "#005f9e"; //back
+var cubeColor1 = "#1e40af"; //right - deep ocean blue
+var cubeColor2 = "#d97706"; //left - warm amber
+var cubeColor3 = "#0a7a55"; //top - rich emerald green (unique)
+var cubeColor4 = "#1f2937"; //bottom - charcoal
+var cubeColor5 = "#0e7490"; //front - deep teal
+var cubeColor6 = "#dc2626"; //back - burnt sienna
 var currentColor = cubeColor3;
 var floorBlock = new THREE.Vector3();
 var floorBlockPos = new THREE.Vector3();
@@ -70,7 +70,7 @@ function init() {
     // create a Scene
     scene = new THREE.Scene();
 
-    scene.background = new THREE.Color(0x223254);
+    scene.background = new THREE.Color(0x0d1117);
     currentScene = "sceneMenuMain";
     //    currentLevel = "level1";
     raycaster = new THREE.Raycaster();
@@ -803,4 +803,5 @@ document.addEventListener("mousedown", builderfunc);
 window.addEventListener("mousemove", onMouseMove, false);
 
 // call the init function to set everything up
+
 init();
